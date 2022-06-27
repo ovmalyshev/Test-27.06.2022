@@ -5,14 +5,11 @@ function date_nb_days (a0, a, p) {
         amount = a0 + a0*p/100/360;
         i = i + 1;
     }
-    // console.log(amount, i)
+    
 
     const date = new Date('2016-01-01');
     // console.log(date)
     date.setDate(date.getDate() + i);
-    // return console.log(date.toLocaleDateString().toString());
-    // --------------------
-    // variant 1
     
     var d = date.toLocaleDateString().toString().split('-');
     console.log(d)
