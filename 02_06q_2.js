@@ -1,5 +1,6 @@
 function weIrDStRiNgCaSe(str) {
     var arr = str.split(' ');
+    // console
     var newArr1
     for (var i = 0; i < arr.length; i++) {
             arr[i] = arr[i].split('').map(function(value, index) {
@@ -7,7 +8,7 @@ function weIrDStRiNgCaSe(str) {
                 }).join('') 
        
         }
-// console
+
         var newStr = arr.join(' ');
     console.log(newStr);
 }
